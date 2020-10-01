@@ -300,7 +300,7 @@
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
                     <branch>refs/heads/mvn-repo</branch>
                     <includes><include>**/*</include></includes>
-                    <repositoryName>cucumber-selenide</repositoryName>
+                    <repositoryName>cucumber</repositoryName>
                     <repositoryOwner>ms8ms</repositoryOwner>
 
                 </configuration>
