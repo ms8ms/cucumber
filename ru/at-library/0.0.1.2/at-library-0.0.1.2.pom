@@ -21,13 +21,17 @@
             <id>jcenter</id>
             <url>https://jcenter.bintray.com/</url>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--WEB ТЕСТИРОВАНИЕ-->
 <!--        <selenide.version>5.14.0</selenide.version>-->
-        <selenide.version>5.2.7</selenide.version>
+        <selenide.version>fa5ec9a64d</selenide.version>
         <!--API ТЕСТИРОВАНИЕ-->
         <rest-assured.version>3.3.0</rest-assured.version>
         <!--MOBILE ТЕСТИРОВАНИЕ-->
@@ -37,7 +41,7 @@
         <cucumber.version>4.3.0</cucumber.version>
         <!--ОТЧЕТ ALLURE-->
 <!--        <allure.version>2.11.0</allure.version>-->
-        <allure.version>2.13.5</allure.version>
+        <allure.version>2.13.6</allure.version>
         <!--LOMBOK-->
         <lombok.version>1.18.10</lombok.version>
         <!--JACKSON-->
@@ -72,7 +76,7 @@
         </dependency>
         <!--WEB ТЕСТИРОВАНИЕ-->
         <dependency>
-            <groupId>com.codeborne</groupId>
+            <groupId>com.github.Antonppavlov</groupId>
             <artifactId>selenide</artifactId>
             <version>${selenide.version}</version>
         </dependency>
@@ -113,6 +117,12 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-selenide</artifactId>
             <version>${allure.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.codeborne</groupId>
+                    <artifactId>selenide</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
