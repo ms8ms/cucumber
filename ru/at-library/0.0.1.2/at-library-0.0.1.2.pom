@@ -56,6 +56,7 @@
         <jsonpath.version>2.4.0</jsonpath.version>
         <aspectj.version>1.9.4</aspectj.version>
         <owner.version>1.0.4</owner.version>
+        <awaitility.version>4.0.3</awaitility.version>
         <!--СОЗДАНИЕ БИБЛИОТЕКИ В GITHUB-->
         <github.global.server>github</github.global.server>
         <github.maven-plugin>0.12</github.maven-plugin>
@@ -68,6 +69,14 @@
             <artifactId>aspectjrt</artifactId>
             <version>${aspectj.version}</version>
         </dependency>
+
+        <!--РАБОТА С ОЖИДАНИЯМИ-->
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <version>${awaitility.version}</version>
+        </dependency>
+
         <!--MOBILE ТЕСТИРОВАНИЕ-->
         <dependency>
             <groupId>io.appium</groupId>
